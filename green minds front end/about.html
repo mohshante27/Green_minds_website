@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> About Green Minds Youth Initiative</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    /* ===== CORE STYLES ===== */
+    :root {
+      --dark-green: #2E8B57;
+      --light-green: #9DC183;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    /* ===== ENHANCED ANIMATED HEADER ===== */
+    header {
+      background: linear-gradient(to right, #1a3a1a, var(--dark-green));
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .logo-title-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      margin-bottom: 10px;
+    }
+
+    .header-logo {
+      height: 120px;
+      opacity: 0;
+      transform: translateY(-30px) rotate(-10deg);
+      animation: logoEntrance 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.3s forwards;
+    }
+
+    .header-title {
+      font-size: 2.5rem;
+      margin: 0;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+      opacity: 0;
+      transform: translateY(30px);
+      animation: titleEntrance 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.3s forwards;
+    }
+
+    .header-subtitle {
+      font-size: 1.2rem;
+      margin: 10px 0 0;
+      opacity: 0;
+      animation: fadeIn 1s ease-out 1s forwards;
+    }
+
+    @keyframes logoEntrance {
+      0% {
+        opacity: 0;
+        transform: translateY(-30px) rotate(-10deg);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0) rotate(0);
+      }
+    }
+
+    @keyframes titleEntrance {
+      0% {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    /* ===== NAVIGATION ===== */
+    nav {
+      background-color: #333;
+      padding: 10px 0;
+    }
+
+    .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .nav-menu {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      gap: 20px;
+    }
+
+    .nav-menu a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 10px 15px;
+      border-radius: 4px;
+      transition: background-color 0.3s;
+    }
+
+    .nav-menu a:hover {
+      background-color: rgba(255,255,255,0.1);
+      text-decoration: none;
+    }
+
+    .social-icons {
+      display: flex;
+      gap: 15px;
+    }
+
+    .social-icons a {
+      color: white;
+      font-size: 1.2rem;
+      transition: transform 0.3s;
+    }
+
+    .social-icons a:hover {
+      transform: scale(1.2);
+    }
+
+    /* ===== MAIN CONTENT ===== */
+    main {
+      flex: 1;
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    section {
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+    }
+
+    section:hover {
+      transform: scale(1.05);
+    }
+
+    #our-story {
+      background-color: #f9f9f9;
+    }
+
+    #core-values {
+      background-color: #f2f2f2;
+    }
+
+    #mission {
+      background-color: #f5f5f5;
+    }
+
+    #vision {
+      background-color: #f0f0f0;
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      background: linear-gradient(to right, #1a3a1a, var(--dark-green));
+      color: white;
+      padding: 30px 0;
+      margin-top: auto;
+      border-top: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .footer-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 20px;
+      flex-wrap: wrap;
+    }
+
+    .footer-logo {
+      height: 60px;
+    }
+
+    .footer-middle {
+      text-align: center;
+      flex: 1;
+      padding: 0 20px;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+      margin-bottom: 15px;
+    }
+
+    .footer-links a {
+      color: white;
+      text-decoration: none;
+      padding: 8px 15px;
+      border-radius: 4px;
+      transition: background-color 0.3s;
+    }
+
+    .footer-links a:hover {
+      background-color: rgba(255,255,255,0.1);
+    }
+
+    .footer-social {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-bottom: 15px;
+    }
+
+    .footer-social a {
+      color: white;
+      font-size: 1.2rem;
+      transition: transform 0.3s;
+    }
+
+    .footer-social a:hover {
+      transform: scale(1.2);
+    }
+
+    .copyright {
+      font-size: 0.9rem;
+      opacity: 0.8;
+      width: 100%;
+      text-align: center;
+    }
+
+    /* ===== MOBILE RESPONSIVENESS ===== */
+    @media (max-width: 768px) {
+      .logo-title-wrapper {
+        flex-direction: column;
+      }
+      .header-logo {
+        height: 70px;
+      margin-bottom: 15px;
+      }
+      .header-title {
+        font-size: 2rem;
+      }
+      .nav-container {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px 20px;
+      }
+      .footer-container {
+        flex-direction: column;
+        gap: 20px;
+      }
+      .footer-logo {
+        height: 50px;
+      }
+      .footer-middle {
+        order: 3;
+        width: 100%;
+        padding: 20px 0 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header with Logo -->
+  <header>
+    <div class="logo-title-wrapper">
+      <img src="images/green-minds-logo.png" alt="Logo" class="header-logo">
+      <h1 class="header-title"> ABOUT GREEN MINDS YOUTH INITIATIVE</h1>
+    </div>
+    <p class="header-subtitle">Inspiring A Culture Of Environmental Consciousness</p>
+  </header>
+
+ <nav>
+  <div class="nav-container">
+    <ul class="nav-menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="social-icons">
+      <a href="https://www.facebook.com/profile.php?id=61569551323460" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://www.instagram.com/greenmindsyouthinitiative?utm_source=qr&igsh=dXdjbzA1bXltZGU=" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="mailto:mohammedswabri65@gmail.com"><i class="fas fa-envelope"></i></a>
+      <a href="https://wa.me/+254703805049" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://linkedin.com/yourprofile" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
+  </div>
+</nav>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Section 1: Our Story -->
+    <section id="our-story">
+      <h2>Our Story</h2>
+       <p>THIS IS WHERE OUR STORY AT</p>
+      <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/your-video-id" title="Our Story" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </section>
+
+    <!-- Section 2: Our Core Values -->
+    <section id="core-values">
+      <h2>Our Core Values</h2>
+      <div class="values-container">
+        <div class="value">
+          <h3>Value 1</h3>
+          <p>Description of value 1</p>
+        </div>
+        <div class="value">
+          <h3>Value 2</h3>
+          <p>Description of value 2</p>
+        </div>
+        <div class="value">
+          <h3>Value 3</h3>
+          <p>Description of value 3</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3: Mission -->
+    <section id="mission">
+      <h2>Our Mission</h2>
+      <p>Our mission is to promote environmental conservation and sustainability through youth-led initiatives.</p>
+    </section>
+
+    <!-- Section 4: Vision -->
+    <section id="vision">
+      <h2>Our Vision</h2>
+      <p>Our vision is to create a sustainable future for all, where humans live in harmony with the environment.</p>
+    </section>
+  </main>
+
+  <!-- Footer with Logos and Social Icons -->
+  <footer>
+    <div class="footer-container">
+      <img src="images/fazil-chinoy-logo.jpg" alt="Fazil Chinoy" class="footer-logo">
+      
+      <div class="footer-middle">
+        <div class="footer-social">
+          <a href="https://www.facebook.com/profile.php?id=61569551323460" target="_blank"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.instagram.com/greenmindsyouthinitiative?utm_source=qr&igsh=dXdjbzA1bXltZGU=" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="mailto:contact@example.com"><i class="fas fa-envelope"></i></a>
+          <a href="https://wa.me/+254769718607" target="_blank"><i class="fab fa-whatsapp"></i></a>
+          <a href="https://linkedin.com/yourprofile" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="projects.html">Projects</a>
+          <a href="contact.html">Contact</a>
+        </div>
+       <p>&copy; 2025 Green Minds Youth Initiative.</p>
+        <p>All Rights Reserved.</p>
+      </div>
+      
+      <img src="images/sambasports-logo.jpg" alt="SambaSports" class="footer-logo">
+    </div>
+  </footer>
+</body>
+</html>
