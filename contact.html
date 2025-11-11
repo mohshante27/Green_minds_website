@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Green Minds Youth Initiative</title>
+  <link rel="icon" href="images/green-minds-logo.png" type="image/png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!-- Combined Header & Navigation -->
+<header class="combined-header">
+  <div class="header-nav-container">
+    <!-- Logo and Brand -->
+    <div class="header-brand">
+      <img src="images/green-minds-logo.png" alt="Green Minds Logo" class="header-logo">
+      <div class="header-text">
+        <h1 class="header-title">CONTACT US</h1>
+        <p class="header-subtitle">Let's Connect</p>
+      </div>
+    </div>
+
+    <!-- Mobile Menu Button -->
+    <button class="mobile-menu-btn" id="mobileMenuBtn">
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Navigation Content -->
+    <div class="header-nav-content" id="headerNavContent">
+      <!-- Navigation Menu -->
+      <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+
+      <!-- Search and Social Icons -->
+      <div class="header-utilities">
+        <div class="search-container">
+          <input type="search" placeholder="Search..." id="searchInput">
+          <button type="button" id="searchButton"><i class="fas fa-search"></i></button>
+          <div class="search-results" id="searchResults"></div>
+        </div>
+        
+        <div class="social-icons">
+          <a href="https://www.facebook.com/profile.php?id=61569551323460" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.instagram.com/greenmindsyouthinitiative?utm_source=qr&igsh=dXdjbzA1bXltZGU=" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="mailto:greenmindsyouthinitiative20@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          <a href="https://wa.me/+254769718607" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          <a href="https://linkedin.com/green-minds-youth-initiative/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- Breadcrumb Navigation -->
+<nav class="breadcrumb">
+  <div class="nav-container">
+    <a href="index.html">Home</a>
+    <span class="breadcrumb-separator">/</span>
+    <span id="currentPage"></span>
+  </div>
+</nav>
+  <!-- Main Content -->
+  <main>
+    <section>
+      <div class="section-title">
+        <h2>Get In Touch</h2>
+        <p>We'd love to hear from you. Reach out to collaborate, volunteer, or learn more about our initiatives.</p>
+      </div>
+
+      <div class="contact-layout">
+        <!-- Contact Form -->
+        <div class="contact-form">
+          <h2>Send Us a Message</h2>
+          <form action="https://formspree.io/f/your-actual-form-id" method="POST">
+            <input type="hidden" name="_subject" value="New Contact Form Submission - Green Minds">
+            
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="phone">Phone Number (Optional)</label>
+              <input type="tel" id="phone" name="phone">
+            </div>
+            
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="message">Your Message</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+            
+            <button type="submit" class="btn">Send Message</button>
+          </form>
+        </div>
+
+        <!-- Contact Information -->
+        <div class="contact-info">
+          <h2>Contact Information</h2>
+          <ul class="contact-details">
+            <li>
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <strong>Location</strong><br>
+                Kwale County, Kenya
+              </div>
+            </li>
+            <li>
+              <i class="fas fa-phone"></i>
+              <div>
+                <strong>Phone</strong><br>
+                <a href="tel:+254769718607">+254 769 718 607</a>
+              </div>
+            </li>
+            <li>
+              <i class="fas fa-envelope"></i>
+              <div>
+                <strong>Email</strong><br>
+                <a href="mailto:greenmindsyouthinitiative20@gmail.com">greenmindsyouthinitiative20@gmail.com</a>
+              </div>
+            </li>
+            <li>
+              <i class="fas fa-envelope"></i>
+              <div>
+                <strong>Partner Email</strong><br>
+                <a href="mailto:sambasports.innovationhub@gmail.com">sambasports.innovationhub@gmail.com</a>
+              </div>
+            </li>
+          </ul>
+          
+          <div style="margin-top: 30px;">
+            <h3>Follow Us</h3>
+            <div class="footer-social" style="justify-content: flex-start; margin-top: 15px;">
+              <a href="https://www.facebook.com/profile.php?id=61569551323460" target="_blank" aria-label="Facebook" style="color: var(--dark-green);">
+                <i class="fab fa-facebook"></i>
+              </a>
+              <a href="https://www.instagram.com/greenmindsyouthinitiative?utm_source=qr&igsh=dXdjbzA1bXltZGU=" target="_blank" aria-label="Instagram" style="color: var(--dark-green);">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="mailto:greenmindsyouthinitiative20@gmail.com" aria-label="Email" style="color: var(--dark-green);">
+                <i class="fas fa-envelope"></i>
+              </a>
+              <a href="https://wa.me/+254769718607" target="_blank" aria-label="WhatsApp" style="color: var(--dark-green);">
+                <i class="fab fa-whatsapp"></i>
+              </a>
+              <a href="https://linkedin.com/green-minds-youth-initiative/" target="_blank" aria-label="LinkedIn" style="color: var(--dark-green);">
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <img src="images/fazil-chinoy-logo.jpg" alt="Fazil Chinoy Fellowship" class="footer-logo">
+      
+      <div class="footer-middle">
+        <div class="footer-social">
+          <a href="https://www.facebook.com/profile.php?id=61569551323460" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.instagram.com/greenmindsyouthinitiative?utm_source=qr&igsh=dXdjbzA1bXltZGU=" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="mailto:greenmindsyouthinitiative20@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          <a href="https://wa.me/+254769718607" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          <a href="https://linkedin.com/green-minds-youth-initiative/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        </div>
+        
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="projects.html">Projects</a>
+          <a href="contact.html">Contact</a>
+        </div>
+
+        <!-- Legal Links -->
+        <div class="legal-links">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
+        
+        <p class="copyright">&copy; 2025 Green Minds Youth Initiative. All Rights Reserved.</p>
+      </div>
+      
+      <img src="images/sambasports-logo.jpg" alt="SambaSports Youth Trust" class="footer-logo">
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

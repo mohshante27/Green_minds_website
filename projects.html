@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects - Green Minds Youth Initiative</title>
+  <link rel="icon" href="images/green-minds-logo.png" type="image/png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Combined Header & Navigation -->
+<header class="combined-header">
+  <div class="header-nav-container">
+    <!-- Logo and Brand -->
+    <div class="header-brand">
+      <img src="images/green-minds-logo.png" alt="Green Minds Logo" class="header-logo">
+      <div class="header-text">
+        <h1 class="header-title">OUR PROJECTS</h1>
+        <p class="header-subtitle">Creating Sustainable Impact in Our Community</p>
+      </div>
+    </div>
+
+    <!-- Mobile Menu Button -->
+    <button class="mobile-menu-btn" id="mobileMenuBtn">
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Navigation Content -->
+    <div class="header-nav-content" id="headerNavContent">
+      <!-- Navigation Menu -->
+      <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <!-- Search and Social Icons -->
+      <div class="header-utilities">
+        <div class="search-container">
+          <input type="search" placeholder="Search..." id="searchInput">
+          <button type="button" id="searchButton"><i class="fas fa-search"></i></button>
+          <div class="search-results" id="searchResults"></div>
+        </div>
+        
+        <div class="social-icons">
+          <a href="https://www.facebook.com/profile.php?id=61569551323460" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.instagram.com/greenmindsyouthinitiative?utm_source=qr&igsh=dXdjbzA1bXltZGU=" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="mailto:greenmindsyouthinitiative20@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          <a href="https://wa.me/+254769718607" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          <a href="https://linkedin.com/green-minds-youth-initiative/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Breadcrumb Navigation -->
+<nav class="breadcrumb">
+  <div class="nav-container">
+    <a href="index.html">Home</a>
+    <span class="breadcrumb-separator">/</span>
+    <span id="currentPage"></span>
+  </div>
+</nav>
+  <!-- Main Content -->
+  <main>
+    <section class="section">
+      <div class="section-title">
+        <h2>Our Environmental Initiatives</h2>
+        <p>Through various programs and partnerships, we're working to create a greener, more sustainable future for Kwale County.</p>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <article class="project-card">
+          <div class="project-image">
+            <img src="images/tree-planting.jpg" alt="Tree Planting Initiative">
+          </div>
+          <div class="project-content">
+            <span class="project-category">Reforestation</span>
+            <h3 class="project-title">Kwale Green Corridor</h3>
+            <p class="project-description">Planting 10,000 native trees along critical wildlife corridors to restore ecosystems and combat climate change in Kwale County.</p>
+            <a href="#" class="btn">Learn More</a>
+            <div class="project-stats">
+              <span class="project-stat"><i class="fas fa-tree"></i> 200 Planted</span>
+              <span class="project-stat"><i class="fas fa-users"></i> 30 Volunteers</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card">
+          <div class="project-image">
+            <img src="images/recycling.jpg" alt="Waste Management Program">
+          </div>
+          <div class="project-content">
+            <span class="project-category">Waste Management</span>
+            <h3 class="project-title">Zero Waste Communities</h3>
+            <p class="project-description">Establishing recycling centers and educating communities on proper waste segregation and upcycling techniques.</p>
+            <a href="#" class="btn">Learn More</a>
+            <div class="project-stats">
+              <span class="project-stat"><i class="fas fa-recycle"></i> 12 Tonnes Recycled</span>
+              <span class="project-stat"><i class="fas fa-home"></i> 5 Communities</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card">
+          <div class="project-image">
+            <img src="images/education.jpg" alt="Environmental Education">
+          </div>
+          <div class="project-content">
+            <span class="project-category">Education</span>
+            <h3 class="project-title">Green Schools Program</h3>
+            <p class="project-description">Training students and teachers in 15 schools on environmental conservation through hands-on learning and school gardens.</p>
+            <a href="#" class="btn">Learn More</a>
+            <div class="project-stats">
+              <span class="project-stat"><i class="fas fa-graduation-cap"></i> 500 Students</span>
+              <span class="project-stat"><i class="fas fa-school"></i> 5 Schools</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 4-->
+        <article class="project-card">
+          <div class="project-image">
+            <img src="images/agriculture.jpg" alt="Sustainable Agriculture">
+          </div>
+          <div class="project-content">
+            <span class="project-category">Agriculture</span>
+            <h3 class="project-title">Sustainable Farming</h3>
+            <p class="project-description">Training local farmers in organic farming techniques and agroforestry to improve food security while protecting the environment.</p>
+            <a href="#" class="btn">Learn More</a>
+            <div class="project-stats">
+              <span class="project-stat"><i class="fas fa-tractor"></i> 50 Farmers</span>
+              <span class="project-stat"><i class="fas fa-seedling"></i> 20 Acres</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 5 -->
+        <article class="project-card">
+          <div class="project-image">
+            <img src="images/wildlife.jpg" alt="Wildlife Conservation">
+          </div>
+          <div class="project-content">
+            <span class="project-category">Wildlife</span>
+            <h3 class="project-title">Coastal Conservation</h3>
+            <p class="project-description">Protecting marine ecosystems through beach cleanups, mangrove restoration, and community education programs.</p>
+            <a href="#" class="btn">Learn More</a>
+            <div class="project-stats">
+              <span class="project-stat"><i class="fas fa-water"></i> 8km Coastline</span>
+              <span class="project-stat"><i class="fas fa-fish"></i> 5 Species Protected</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+    <!-- Brochure Download Section -->
+    <section class="section">
+  <div class="content-section" style="text-align: center;">
+    <h2>Download Our Brochure</h2>
+    <p>Learn more about our initiatives, impact, and how you can get involved by downloading our comprehensive brochure.</p>
+    <a href="documents/green-minds-brochure.pdf" download class="btn">
+      <i class="fas fa-download"></i> Download Brochure (PDF)
+    </a>
+    <p style="margin-top: 10px; font-size: 0.9rem; color: var(--medium-gray);">
+      File size: 11.6 MB
+    </p>
+  </div>
+</section>
+
+    <!-- Impact Section -->
+    <section class="impact-section">
+      <div class="section-title">
+        <h2>Our Project Impact</h2>
+        <p>Measuring the difference our initiatives are making in Kwale County</p>
+      </div>
+      <div class="impact-stats">
+        <div class="impact-item">
+          <i class="fas fa-tree" aria-hidden="true"></i>
+          <h3>2,500+</h3>
+          <p>Trees Planted</p>
+        </div>
+        <div class="impact-item">
+          <i class="fas fa-recycle" aria-hidden="true"></i>
+          <h3>15+</h3>
+          <p>Tonnes Recycled</p>
+        </div>
+        <div class="impact-item">
+          <i class="fas fa-graduation-cap" aria-hidden="true"></i>
+          <h3>800+</h3>
+          <p>Students Educated</p>
+        </div>
+        <div class="impact-item">
+          <i class="fas fa-tint" aria-hidden="true"></i>
+          <h3>12</h3>
+          <p>Water Systems</p>
+        </div>
+        <div class="impact-item">
+          <i class="fas fa-users" aria-hidden="true"></i>
+          <h3>1,200+</h3>
+          <p>Community Members</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+ <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <img src="images/fazil-chinoy-logo.jpg" alt="Fazil Chinoy Fellowship" class="footer-logo">
+      
+      <div class="footer-middle">
+        <div class="footer-social">
+          <a href="https://www.facebook.com/profile.php?id=61569551323460" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.instagram.com/greenmindsyouthinitiative?utm_source=qr&igsh=dXdjbzA1bXltZGU=" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="mailto:greenmindsyouthinitiative20@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          <a href="https://wa.me/+254769718607" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          <a href="https://linkedin.com/green-minds-youth-initiative/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        </div>
+        
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="projects.html">Projects</a>
+          <a href="contact.html">Contact</a>
+        </div>
+
+        <!-- Legal Links -->
+        <div class="legal-links">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
+        
+        <p class="copyright">&copy; 2025 Green Minds Youth Initiative. All Rights Reserved.</p>
+      </div>
+      
+      <img src="images/sambasports-logo.jpg" alt="SambaSports Youth Trust" class="footer-logo">
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
